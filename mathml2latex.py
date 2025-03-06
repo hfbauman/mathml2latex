@@ -44,6 +44,13 @@ def convert(text):
     # Remove multiple consecutive blank lines
     for _ in range(2):
         text = re.sub(r'\n\n', '\n', text)
+
+    # Replace $$ with $ for bulleted lines
+    lines = text.split('\n')
+    for i, line in enumerate(lines):
+        if line.strip().startswith('-'):
+            lines[i] = line.replace('$$', '$')
+    text = '\n'.join(lines)
     return text
 
 def main():
