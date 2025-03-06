@@ -36,11 +36,11 @@ def unicode2latex(latex_block):
     return latex_text
 
 def convert(text):
-    mathml_blocks = re.findall(r"<!--\\\[if mathML\]>(.*?)<!\\\[endif\]-->", text, re.DOTALL)
+    mathml_blocks = re.findall(r"<!--\[if mathML\]>(.*?)<!\[endif\]-->", text, re.DOTALL)
     for mathml_block in mathml_blocks:
         latex_block = mathml2latex(mathml_block)
         latex_text = unicode2latex(latex_block)
-        text = text.replace('<!--\\[if mathML]>' + mathml_block + '<!\\[endif]-->', latex_text)
+        text = text.replace('<!--[if mathML]>' + mathml_block + '<![endif]-->', latex_text)
     # Remove multiple consecutive blank lines
     for _ in range(2):
         text = re.sub(r'\n\n', '\n', text)
