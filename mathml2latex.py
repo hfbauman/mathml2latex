@@ -4,6 +4,7 @@
 import re
 import os
 import sys
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 from lxml import etree
 from unicode_map import unicode_map
 
