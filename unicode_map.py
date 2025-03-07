@@ -11,6 +11,7 @@ unicode_map = {
     '\\u2200': '\\forall ',
     '\\u27e8': '\\langle ',
     '\\u27e9': '\\rangle ',
+    '\\u2254': '\\coloneqq ',
     # Greek Capital
     '\\u0391': '\\Alpha ',
     '\\u0392': '\\Beta ',
