@@ -32,6 +32,7 @@ def unicode2latex(latex_block):
     latex_text = latex_text.replace('{\\ }', '\\ ')                        # "{ }" --> " "
     latex_text = re.sub(r' \}', '}', latex_text)                           # " }" --> "}"
     latex_text = re.sub(r'\\left\s*\.\s*\\\[', r'\\left[', latex_text)   # "\left . \[" --> "\left["
+    latex_text = re.sub(r'\\langle\s*(.*?)\s*\\rangle', r'\\braket{\1}', latex_text) # "\langle ... \rangle" --> "\braket{...}"
     latex_text = latex_text.replace('\\n\\[\\n\\t', '$$').replace('\\n\\]', '$$')
     return latex_text
 

@@ -8,6 +8,9 @@ unicode_map = {
     '\\u22ee': '\\vdots ',
     '\\u22ef': '\\cdots ',
     '\\u22f1': '\\ddots ',
+    '\\u2200': '\\forall ',
+    '\\u27e8': '\\langle ',
+    '\\u27e9': '\\rangle ',
     # Greek Capital
     '\\u0391': '\\Alpha ',
     '\\u0392': '\\Beta ',
@@ -326,7 +329,7 @@ unicode_map = {
     '\\U0001d6be': '\\mathbf{\\Chi}',
     '\\U0001d6bf': '\\mathbf{\\Psi}',
     '\\U0001d6c0': '\\mathbf{\\Omega}',
-    '\\U0001d6c1': '\\mathbf{\\Nabla}',
+    '\\U0001d6c1': '\\mathbf{\\nabla}',
     # Mathematical Bold Small
     '\\U0001d6c2': '\\mathbf{\\alpha}',
     '\\U0001d6c3': '\\mathbf{\\beta}',
@@ -386,7 +389,7 @@ unicode_map = {
     '\\U0001d6f8': '\\mathit{\\Chi}',
     '\\U0001d6f9': '\\mathit{\\Psi}',
     '\\U0001d6fa': '\\mathit{\\Omega}',
-    '\\U0001d6fb': '\\mathit{\\Nabla}',
+    '\\U0001d6fb': '\\mathit{\\nabla}',
     # Mathematical Italic Small
     '\\U0001d6fc': '\\mathit{\\alpha}',
     '\\U0001d6fd': '\\mathit{\\beta}',
@@ -446,7 +449,7 @@ unicode_map = {
     '\\U0001d732': '\\bm{\\Chi}',
     '\\U0001d733': '\\bm{\\Psi}',
     '\\U0001d734': '\\bm{\\Omega}',
-    '\\U0001d735': '\\bm{\\Nabla}',
+    '\\U0001d735': '\\bm{\\nabla}',
     # Mathematical Bold Italic Small
     '\\U0001d736': '\\bm{\\alpha}',
     '\\U0001d737': '\\bm{\\beta}',
